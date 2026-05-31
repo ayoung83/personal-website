@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grocery List</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Courier+Prime:ital@0;1&display=swap" rel="stylesheet">
+<link href="~/style/grocery.css" rel="stylesheet.css" />
+
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">— Alexa-powered —</p>
+  <h1>Grocery<br><em>List</em></h1>
+  <div class="status-bar">
+    <div class="dot" id="dot"></div>
+    <span id="status-text">connecting...</span>
+    <span style="margin-left:auto" id="last-updated"></span>
+  </div>
+</header>
+
+<div class="divider"></div>
+
+<div class="config-banner" id="config-banner">
+  ⚙️ <strong>Setup needed:</strong> Replace <code>YOUR_API_GATEWAY_URL</code> at the top of this file with your AWS API Gateway endpoint to connect live data.
+</div>
+
+<div class="list-container" id="list-container">
+  <div class="state-msg" id="state-msg">Loading your list...</div>
+</div>
+
+<div class="footer">
+  <div class="progress-track">
+    <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+  </div>
+  <p class="progress-label"><span id="done-count">0</span> of <span id="total-count">0</span> items collected</p>
+</div>
+<script src="/nav.js"></script>
+</body>
+</html>
